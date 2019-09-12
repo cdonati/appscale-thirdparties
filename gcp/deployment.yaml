@@ -1,0 +1,12 @@
+imports:
+- path: vm-template.py
+- path: network-template.py
+- path: firewall-template.py
+- path: compute-engine-template.py
+
+resources:
+- name: compute-engine-setup
+  type: compute-engine-template.py
+  properties:
+    vmCount: <number-of-vms>
+    serviceAccount: <service-account-email>
